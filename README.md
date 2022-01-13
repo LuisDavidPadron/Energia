@@ -1,4 +1,4 @@
-# Proyecto energia chile
+# Proyecto energia chile https://energia-chile.herokuapp.com/
 
 ## Lanzar update [ sudo apt-get update ] o [ sudo yum update ]
 
@@ -49,6 +49,8 @@ npm run build
 
 ## iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port [ 8080 o el configurado en el fichero server.js, por default se encuentra el 8080 ]
 
+## O opcion con apache ProxyPass, con el servidor en ejecucion con pm2 en el httpd.conf
+
 ## Leer Si desea, con orden de pasos de ejecucion:
 
 ## https://linuxhint.com/change-port-number-vue-cli/
@@ -56,3 +58,4 @@ npm run build
 ## https://phoenixnap.com/kb/install-node-js-npm-centos 
 ## https://pm2.keymetrics.io/ 
 ## https://askubuntu.com/questions/444729/redirect-port-80-to-8080-and-make-it-work-on-local-machine
+## https://httpd.apache.org/docs/2.4/mod/mod_proxy.html#proxypass
